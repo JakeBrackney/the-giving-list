@@ -1,0 +1,21 @@
+.nav-wrapper {
+  width: 100%;
+  font-size: 60px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder
+}
+
+.header-link {
+  color: white;
+  font-size: 25px;
+  padding-right: 25px;
+  text-decoration: none;
+  justify-content: right;
+  position: relative
+}
+
+.navlink:hover {
+  color: rgba(255, 255, 255, .5)
+}
