@@ -4,10 +4,6 @@ import './Header.css'
 
 class Header extends Component {
 
-  constructor() {
-    super()
-  }
-
   componentWillMount() {
     console.log('component will mount')
   }
