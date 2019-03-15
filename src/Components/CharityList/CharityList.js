@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { Link } from 'react-router-dom'
 import './CharityList.css'
 
 class CharityList extends Component {
@@ -9,13 +10,13 @@ class CharityList extends Component {
         return (
         <div key={index.org}>
             <ul>
-                <li><a href={"/charities/" + index._id}>{index.org}</a></li>
+                <li><a href={"/giving/" + index._id}>{index.org}</a></li>
             </ul>
         </div>
         )      
     })
     return (
-        <div>
+        <div className='charityList'>
             <h1>Organizations</h1>
             {list}
         </div>

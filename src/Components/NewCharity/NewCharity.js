@@ -3,11 +3,15 @@ import './NewCharity.css'
 
 class NewCharity extends Component {
 
+  componentDidMount() {
+    console.log('new component did mount')
+  }
+
   constructor(props) {
     super(props)
 
     this.setState = {
-      pin: props.pin
+      charity: props.charity
     }
   }
   

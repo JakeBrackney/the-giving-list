@@ -4,10 +4,6 @@ import './Header.css'
 
 class Header extends Component {
 
-  componentWillMount() {
-    console.log('component will mount')
-  }
-
 
   render() {
     return (
@@ -15,6 +11,7 @@ class Header extends Component {
         <nav className='nav-wrapper'> <h1>The Giving List</h1>
           <div className='nav-elements'>
               <Link to='/giving/neworg' type="submit" className='header-link'>New Organization</Link> 
+              <Link to='/giving' type="submit" className='header-link'>Home</Link>
           </div>
         </nav>
       </div>

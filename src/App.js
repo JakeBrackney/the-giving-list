@@ -18,13 +18,12 @@ class App extends Component {
 
   componentDidMount() {
     console.log("component did mount")
-    axios.get('http://localhost:3001')
+    axios.get('http://localhost:3001/')
       .then((res) => {
         console.log(res.data)
         this.setState({
           charities: res.data
         })
-        console.log(this.state.charities)
       })
       .catch((err) => {
         console.log(err)
@@ -36,11 +35,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <Header />
-          <Route path='/giving/neworg/' component={NewCharity}/>
         </header>
         <main>
         <div className ='charitytList'>
             <Switch>
+              <Route path='/giving/neworg/' component={NewCharity}/>
               <Route path='/giving/:id' render={(routerProps)=>< ShowCharity {...routerProps} {...this.state} />} />
               <Route path='/giving' render={(routerProps)=>< CharityList  {...routerProps} {...this.state} charities={this.state.charities} />}/>
             </Switch>
