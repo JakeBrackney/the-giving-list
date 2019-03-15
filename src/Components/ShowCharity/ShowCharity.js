@@ -2,23 +2,23 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import './ShowCharity.css'
 
+const charityUrl = 'localhost:3001/giving/'
 
 class ShowCharity extends Component {
-  
+
   constructor(props) {
     super(props)
     this.state = {
       charity: []
-    }
   }
-  
+}
+
   componentDidMount() {
-    const charityUrl = 'http://localhost:3001/giving/'
+    console.log('single component did mount')
     const charityId = this.props.match.params.id
     console.log(charityId)
     const url = `${charityUrl}${charityId}`
-    
-    console.log('single component did mount')
+
     axios.get(url)
       .then((res) => {
         console.log(res)
@@ -32,10 +32,9 @@ class ShowCharity extends Component {
       })
   }
 
-
   render() {
     return (
-      <div key = {this.state.charity._id} className='charityCard'>
+      <div key = {this.state.charity.id} className='charityCard'>
         <h1 className='charityTitle'>{this.state.charity.org}</h1>
         <p>Category: {this.state.charity.category}</p>
         <p>Mission Statement: {this.state.charity.mission}</p>
