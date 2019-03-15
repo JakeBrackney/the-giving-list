@@ -1,21 +1,28 @@
 .nav-wrapper {
-  width: 100%;
-  font-size: 60px;
-  padding-left: 10px;
   display: flex;
+  padding-left: 10px;
   justify-content: space-between;
-  font-weight: bolder
+}
+
+.header-title {
+  margin: 12px;
+  font-size: 45px;
+  /* padding-bottom: 55px; */
+}
+
+.nav-elements {
+  padding: 10px 10px 10px 10px;
+  justify-content: flex-end;
+  font-weight: bolder;
+  
 }
 
 .header-link {
   color: white;
   font-size: 25px;
-  padding-right: 25px;
   text-decoration: none;
-  justify-content: right;
-  position: relative
 }
 
-.navlink:hover {
+.header-link:hover {
   color: rgba(255, 255, 255, .5)
 }

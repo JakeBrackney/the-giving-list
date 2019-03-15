@@ -1,0 +1,21 @@
+.charity-card {
+  max-width: 35%;
+  margin: 25px;
+  padding: 25px;
+  box-shadow: 1px 1px 25px 1px rgb(211, 211, 211);
+  border-radius: 10px;
+}
+
+.charity-title {
+  font-size: 35px;
+
+}
+
+.logo {
+  max-width: 50%
+}
+
+.link {
+  font-weight: bold;
+  text-decoration: none;
+}

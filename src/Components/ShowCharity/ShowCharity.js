@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import './ShowCharity.css'
 
-const charityUrl = 'localhost:3001/giving/'
+const charityUrl = 'http://localhost:3001/giving/'
 
 class ShowCharity extends Component {
 
@@ -34,11 +34,12 @@ class ShowCharity extends Component {
 
   render() {
     return (
-      <div key = {this.state.charity.id} className='charityCard'>
-        <h1 className='charityTitle'>{this.state.charity.org}</h1>
-        <p>Category: {this.state.charity.category}</p>
-        <p>Mission Statement: {this.state.charity.mission}</p>
-        <a href={this.state.charity.donateUrl}>Donate Here: </a>
+      <div key = {this.state.charity._id} className='charity-card'>
+        <img src={this.state.charity.logoUrl} className='logo' />
+        <h1 className='charity-title'>{this.state.charity.org}</h1>
+        <h2>Category</h2><p>{this.state.charity.category}</p>
+        <h2>Mission Statement</h2> <p>{this.state.charity.mission}</p>
+        <h2><a href={this.state.charity.donateUrl} class='link'>Donate Here </a></h2>
       </div>
     );
   }
