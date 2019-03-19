@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import './ShowCharity.css'
+import {CLIENT_URL} from '../../constants'
 
-const charityUrl = 'http://localhost:3001/giving/'
+// const charityUrl = 'http://localhost:3001/giving/'
 
 class ShowCharity extends Component {
 
@@ -17,7 +18,7 @@ class ShowCharity extends Component {
     console.log('single component did mount')
     const charityId = this.props.match.params.id
     console.log(charityId)
-    const url = `${charityUrl}${charityId}`
+    const url = `${CLIENT_URL}${charityId}`
 
     axios.get(url)
       .then((res) => {

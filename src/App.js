@@ -6,6 +6,7 @@ import CharityList from './Components/CharityList/CharityList'
 import ShowCharity from './Components/ShowCharity/ShowCharity'
 import './App.css';
 import axios from 'axios'
+import { CLIENT_URL } from '../src/constants'
 
 class App extends Component {
 
@@ -18,7 +19,7 @@ class App extends Component {
 
   componentDidMount() {
     console.log("component did mount")
-    axios.get('http://localhost:3001/')
+    axios.get(CLIENT_URL)
       .then((res) => {
         console.log(res.data)
         this.setState({
