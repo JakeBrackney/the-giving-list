@@ -9,7 +9,7 @@ class CharityList extends Component {
         return (
         <div key={index.org}>
             <ul>
-                <li><a href={"/giving/" + index._id}>{index.org}</a></li>
+                <li><a href={"giving/" + index._id}>{index.org}</a></li>
             </ul>
         </div>
         )      
