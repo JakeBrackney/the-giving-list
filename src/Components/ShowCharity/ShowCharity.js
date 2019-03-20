@@ -17,8 +17,8 @@ class ShowCharity extends Component {
   componentDidMount() {
     console.log('single component did mount')
     const charityId = this.props.match.params.id
-    console.log(`${CLIENT_URL}${charityId}`)
-    const url = `${CLIENT_URL}${charityId}`
+    console.log(`${CLIENT_URL}` + /giving/ + `${charityId}`)
+    const url = `${CLIENT_URL}` + /giving/ + `${charityId}`
 
     axios.get(url)
       .then((res) => {
