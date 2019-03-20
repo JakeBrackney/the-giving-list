@@ -1,13 +1,13 @@
 {
-  "main.css": "/JakeBrackney/the-giving-list/static/css/main.367ac0a6.chunk.css",
-  "main.js": "/JakeBrackney/the-giving-list/static/js/main.710b5baa.chunk.js",
-  "main.js.map": "/JakeBrackney/the-giving-list/static/js/main.710b5baa.chunk.js.map",
-  "runtime~main.js": "/JakeBrackney/the-giving-list/static/js/runtime~main.07d3ff18.js",
-  "runtime~main.js.map": "/JakeBrackney/the-giving-list/static/js/runtime~main.07d3ff18.js.map",
-  "static/js/2.be6cffc3.chunk.js": "/JakeBrackney/the-giving-list/static/js/2.be6cffc3.chunk.js",
-  "static/js/2.be6cffc3.chunk.js.map": "/JakeBrackney/the-giving-list/static/js/2.be6cffc3.chunk.js.map",
-  "index.html": "/JakeBrackney/the-giving-list/index.html",
-  "precache-manifest.8eeaa7425e35a0c836b47533e95fb0f5.js": "/JakeBrackney/the-giving-list/precache-manifest.8eeaa7425e35a0c836b47533e95fb0f5.js",
-  "service-worker.js": "/JakeBrackney/the-giving-list/service-worker.js",
-  "static/css/main.367ac0a6.chunk.css.map": "/JakeBrackney/the-giving-list/static/css/main.367ac0a6.chunk.css.map"
+  "main.css": "/static/css/main.367ac0a6.chunk.css",
+  "main.js": "/static/js/main.b8c1b913.chunk.js",
+  "main.js.map": "/static/js/main.b8c1b913.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+  "static/js/2.be6cffc3.chunk.js": "/static/js/2.be6cffc3.chunk.js",
+  "static/js/2.be6cffc3.chunk.js.map": "/static/js/2.be6cffc3.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.f4d66d906540854b35fc8f9f13b97cac.js": "/precache-manifest.f4d66d906540854b35fc8f9f13b97cac.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.367ac0a6.chunk.css.map": "/static/css/main.367ac0a6.chunk.css.map"
 }
