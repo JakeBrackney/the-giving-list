@@ -1,29 +1,60 @@
 import React, { Component } from 'react'; 
 import './NewCharity.css'
+// import { CLIENT_URL } from '../../constants'
+import axios from 'axios'
+// import {Redirect} from 'react-router-dom'
 
 class NewCharity extends Component {
 
-  componentDidMount() {
-    console.log('new component did mount')
-  }
+  
 
   constructor(props) {
     super(props)
 
-    this.setState = {
-      charity: props.charity
+    this.state = {
+      org: "",
+      category: "",
+      mission: "",
+      donateUrl: "",
+      logoUrl: ""
     }
+    this.onChange = this.onChange.bind(this)
+    this.onSubmit = this.onSubmit.bind(this)
+    // this.handleRedirect = this.handleRedirect.bind(this)
   }
   
+  componentDidMount() {
+    console.log('new component did mount')
+  }
+
+  onChange = event => {
+    this.setState({ [event.target.name]: event.target.value });
+    console.log(this.state);
+  };
+
+  onSubmit = event => {
+    event.preventDefault();
+    console.log("form submitted");
+    axios.post(this.state).then(result => {
+      console.log(result);
+      this.props.history.push("/giving/:id");
+    });
+  };
+
+//   handleRedirect() {
+//     return <Redirect to='/' />
+// }
+  
   render() {
+    const { org, category, mission, donateUrl, logoUrl } = this.state
     return (
       <div className='form-wrapper'>
-        <form className='form'>
-          <input className='input-field' type='text' placeholder='Organization Name' />
-          <input className='input-field' type='text' placeholder="Category" />
-          <input className='input-field' type='text' placeholder="Mission Statement" />
-          <input className='input-field' type='text' placeholder="Donation Link" />
-          <input className='input-field' type='text' placeholder='Organization Logo URL' />
+        <form className='form' onSubmit={this.onSubmit}>
+          <input className='input-field' type='text' name='org' value={org} placeholder='Organization Name' onChange={this.onChange} />
+          <input className='input-field' type='text' name='category' value={category} placeholder="Category" onChange={this.onChange} />
+          <input className='input-field' type='text' name='mission' value={mission} placeholder="Mission Statement" onChange={this.onChange} />
+          <input className='input-field' type='text' name='donateUrl' value={donateUrl} placeholder="Donation Link" onChange={this.onChange} />
+          <input className='input-field' type='text' name='logoUrl' value={logoUrl} placeholder='Organization Logo URL' onChange={this.onChange} />
           <button type='submit'>Submit</button>
         </form>
       </div>
