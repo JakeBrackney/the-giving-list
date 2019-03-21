@@ -2,7 +2,7 @@
 
 
 ## Description
-Charitable giving is an important part of our society, and there are so many organizations accepting donations. This applications makes use of an API I built using data from organizations with an A rating from CharityWatch.org, meaning the bulk of their annual budgets is actually used for their stated missions. Each organization in the API includes data referencing the organizations name, service category (relief aid, environment, etc.), mission statement, and a link to each organizations donation platform.
+Charitable giving is an important part of our society, and there are so many organizations in need of donations. This applications makes use of an API I built using data from organizations with an A rating from CharityWatch.org, meaning the bulk of their annual budgets is actually used for their stated missions. Each organization in the API includes data referencing the organizations name, service category (relief aid, environment, etc.), mission statement, and a link to each organizations donation platform.
 
 
 ## Functionality
