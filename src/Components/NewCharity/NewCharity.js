@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
 import './NewCharity.css'
-// import { CLIENT_URL } from '../../constants'
+import { CLIENT_URL } from '../../constants'
 import axios from 'axios'
 // import {Redirect} from 'react-router-dom'
 
@@ -29,14 +29,18 @@ class NewCharity extends Component {
 
   onChange = event => {
     this.setState({ [event.target.name]: event.target.value });
-    console.log(this.state);
+    // console.log(this.state);
   };
 
   onSubmit = event => {
     event.preventDefault();
     console.log("form submitted");
-    axios.post(this.state).then(result => {
+    axios.post(`${CLIENT_URL}/giving/:id`, this.state)
+    .then(result => {
       console.log(result);
+      // this.setState ({
+      //   newCharity: result.data
+      // })
       this.props.history.push("/giving/:id");
     });
   };
