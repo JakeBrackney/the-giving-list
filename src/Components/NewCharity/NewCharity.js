@@ -44,10 +44,6 @@ class NewCharity extends Component {
       this.props.history.push("/giving/:id");
     });
   };
-
-//   handleRedirect() {
-//     return <Redirect to='/' />
-// }
   
   render() {
     const { org, category, mission, donateUrl, logoUrl } = this.state

@@ -46,6 +46,11 @@ class App extends Component {
             </Switch>
           </div>
         </main>
+        <div className='footer-container'>
+          <footer>
+            <a className='footer-link' href='http://github.com/JakeBrackney'>Developed by Jake Brackney</a>
+          </footer>
+        </div>
       </div>
     );
   }
