@@ -4,9 +4,9 @@
 }
 
 footer {
-  height: 60px;
+  /* height: 60px; */
   display: inline-block;
-  padding: 15px 45% 10px 45%;
+  padding: 15px 45% 5px 45%;
   margin: 0 auto;
   position: fixed;
   bottom: 0;
@@ -14,7 +14,6 @@ footer {
 }
 
 .footer-link {
-
   text-align: center;
   text-decoration: none;
   color: white;
