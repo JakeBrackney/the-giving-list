@@ -38,6 +38,10 @@ class App extends Component {
           <Header />
         </header>
         <main>
+        <div className='about'>
+        <h1>Making giving easier.</h1>
+          <p>Charitable giving is a cornerstone of any thriving community. There are lots of charitable organizations to choose from, and it can be tough to find a cause or organization that speaks to you. The Giving List hopes to make that process easier. All organizations on this list are highly rated by one or several charity rating organizations. We hope to provide a simple solution to make giving back easier, because it's important to know your money is being spent on the mission.</p>
+        </div>
         <div className ='charitytList'>
             <Switch>
               <Route path='/giving/neworg/' component={NewCharity}/>

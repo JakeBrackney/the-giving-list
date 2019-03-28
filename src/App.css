@@ -3,6 +3,10 @@
   background-color: rgb(50, 90, 102);
 }
 
+.about {
+  text-align: center
+}
+
 footer {
   /* height: 60px; */
   display: inline-block;
