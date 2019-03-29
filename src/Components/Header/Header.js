@@ -12,7 +12,7 @@ class Header extends Component {
           <h1 className='header-title'>The Giving List</h1>
           <div className='nav-elements'>
               <Link to='/giving/neworg' type="submit" className='header-link'>New Organization</Link> 
-              <Link to='/giving' type="submit" className='header-link'>Home</Link> <br />
+              <Link to='/giving' type="submit" className='header-link'>The List</Link> <br />
           </div>
         </nav>
       </div>
