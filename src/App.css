@@ -7,18 +7,19 @@
   text-align: center
 }
 
+.footer-container {
+  text-align: center;
+}
+
 footer {
-  /* height: 60px; */
-  display: inline-block;
-  padding: 15px 45% 5px 45%;
-  margin: 0 auto;
+  padding: 5px 45% 5px 45%;
   position: fixed;
   bottom: 0;
   background-color: rgb(50, 90, 102);
 }
 
 .footer-link {
-  text-align: center;
-  text-decoration: none;
+  width: 250px;
+  /* display: inline-block; */
   color: white;
 }

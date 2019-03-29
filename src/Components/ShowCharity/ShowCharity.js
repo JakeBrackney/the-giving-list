@@ -18,7 +18,7 @@ class ShowCharity extends Component {
     console.log('single component did mount')
     const charityId = this.props.match.params.id
     console.log(`${CLIENT_URL}giving/${charityId}`)
-    const url = `${CLIENT_URL}giving/${charityId}`
+    const url = `${CLIENT_URL}/giving/${charityId}`
 
     axios.get(url)
       .then((res) => {
@@ -35,12 +35,14 @@ class ShowCharity extends Component {
 
   render() {
     return (
-      <div key = {this.state.charity._id} className='charity-card'>
-        <img src={this.state.charity.logoUrl} className='logo' alt=""/>
-        <h1 className='charity-title'>{this.state.charity.org}</h1>
-        <h2>Category</h2><p>{this.state.charity.category}</p>
-        <h2>Mission Statement</h2> <p>{this.state.charity.mission}</p>
-        <h2><a href={this.state.charity.donateUrl} className='link'>Donate Here </a></h2>
+      <div className='card-container'>
+        <div key = {this.state.charity._id} className='charity-card'>
+          <img src={this.state.charity.logoUrl} className='logo' alt=""/>
+          <h1 className='charity-title'>{this.state.charity.org}</h1>
+          <h2>Category</h2><p>{this.state.charity.category}</p>
+          <h2>Mission Statement</h2> <p>{this.state.charity.mission}</p>
+          <h2><a href={this.state.charity.donateUrl} className='link'>Donate Here </a></h2>
+        </div>
       </div>
     );
   }
