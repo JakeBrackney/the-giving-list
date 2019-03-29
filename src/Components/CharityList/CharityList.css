@@ -1,13 +1,18 @@
 .charityList-container {
   text-align: center;
-  margin: 35px;
-  padding-bottom: 45px;
+  padding-bottom: 20px;
 }
+
 
 .list {
   display: inline;
 }
 
+ul {
+  padding: 0 10px;
+}
+
 li {
   list-style-type: none;
+ 
 }

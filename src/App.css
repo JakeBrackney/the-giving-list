@@ -1,5 +1,4 @@
 .App-header {
-  /* height: 180px; */
   background-color: rgb(50, 90, 102);
 }
 
@@ -13,13 +12,12 @@
 }
 
 footer {
-  padding: 5px 45% 5px 45%;
+  width: 100%;
   position: fixed;
   bottom: 0;
   background-color: rgb(50, 90, 102);
 }
 
 .footer-link {
-  width: 290px;
   color: white;
 }
