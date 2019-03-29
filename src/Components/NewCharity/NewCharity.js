@@ -48,15 +48,17 @@ class NewCharity extends Component {
   render() {
     const { org, category, mission, donateUrl, logoUrl } = this.state
     return (
-      <div className='form-wrapper'>
-        <form className='form' onSubmit={this.onSubmit}>
-          <input className='input-field' type='text' name='org' value={org} placeholder='Organization Name' onChange={this.onChange} />
-          <input className='input-field' type='text' name='category' value={category} placeholder="Category" onChange={this.onChange} />
-          <input className='input-field' type='text' name='mission' value={mission} placeholder="Mission Statement" onChange={this.onChange} />
-          <input className='input-field' type='text' name='donateUrl' value={donateUrl} placeholder="Donation Link" onChange={this.onChange} />
-          <input className='input-field' type='text' name='logoUrl' value={logoUrl} placeholder='Organization Logo URL' onChange={this.onChange} />
-          <button type='submit'>Submit</button>
-        </form>
+      <div className='container'>
+        <div className='form-wrapper'>
+          <form className='form' onSubmit={this.onSubmit}>
+            <input className='input-field' type='text' name='org' value={org} placeholder='Organization Name' onChange={this.onChange} />
+            <input className='input-field' type='text' name='category' value={category} placeholder="Category" onChange={this.onChange} />
+            <input className='input-field' type='text' name='mission' value={mission} placeholder="Mission Statement" onChange={this.onChange} />
+            <input className='input-field' type='text' name='donateUrl' value={donateUrl} placeholder="Donation Link" onChange={this.onChange} />
+            <input className='input-field' type='text' name='logoUrl' value={logoUrl} placeholder='Organization Logo URL' onChange={this.onChange} />
+            <button type='submit'>Submit</button>
+          </form>
+        </div>
       </div>
     );
   }

@@ -1,7 +1,11 @@
+.container {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
 .form-wrapper {
-  max-width: 400px;
-  margin-top: 50px;
-  margin-left: 35px;
+  display: inline-block;
+  width: 400px;
   padding: 5px;
   border-radius: 5px;
 }
@@ -34,7 +38,7 @@ button {
   align-self: center;
   margin: 5px;
   font-size: 20px;
-  background-color: rgb(24, 159, 196);
+  background-color: rgb(50, 90, 102);
   color: white;
   border-radius: 50px;
 }
